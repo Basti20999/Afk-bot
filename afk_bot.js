@@ -3,7 +3,7 @@ const { Authflow } = require('prismarine-auth');
 const readline = require('readline');
 
 const USERNAME = 'example@gmail.com'; // Your Microsoft email
-const SERVER_IP = 'example.net'; // Server IP
+const SERVER_IP = 'nitrosmp.net'; // Server IP
 const SERVER_PORT = 25565; // Port
 
 async function createBot() {
@@ -13,7 +13,8 @@ async function createBot() {
         port: SERVER_PORT,
         auth: 'microsoft',
         username: USERNAME,
-        authflow: authflow
+        authflow: authflow,
+        viewDistance: 'far'
     });
 
     bot.on('login', () => {
